@@ -15,9 +15,9 @@ namespace Achei.Amigos.Web.Controllers
         }
 
         // GET /api/location
-        public string Get()
+        public IEnumerable<string> Get()
         {
-            return "Get Ok";
+            return new string[] { "value1", "value2" };
         }
     }
 }
