@@ -8,19 +8,10 @@ namespace Achei.Amigos.Web.Controllers
 {
     public class LocationController : ApiController
     {
-        private static int counter = 0;
-
         // POST /api/location
-        public string Post(string value)
+        public string Post(string latitude, string longitude)
         {
-            counter++;
-            return "Post Ok";
-        }
-
-        // GET /api/location
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2", counter.ToString() };
+            return string.Format("Latitude: {0} Longitude: {1}", latitude, longitude);
         }
     }
 }
