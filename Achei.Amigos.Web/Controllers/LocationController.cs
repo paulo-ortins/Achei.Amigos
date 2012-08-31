@@ -13,5 +13,10 @@ namespace Achei.Amigos.Web.Controllers
         {
             return string.Format("Latitude: {0} Longitude: {1}", latitude, longitude);
         }
+
+        public string Get()
+        {
+            return "Teste";
+        }
     }
 }
