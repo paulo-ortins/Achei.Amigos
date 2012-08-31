@@ -11,7 +11,7 @@ namespace Achei.Amigos.Web.Controllers
         /// <summary>
         /// Indexes this instance.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Testes</returns>
         public ActionResult Index()
         {
             return View();
